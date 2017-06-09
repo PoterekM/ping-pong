@@ -5,8 +5,15 @@ body {
 .jumbotron {
   background-color: grey;
   color: salmon;
+  text-align: center;
 }
 
 #result {
   display: none;
+}
+
+.display-list {
+  color: teal;
+  font-weight: bold;
+  /*text-align: center;*/
 }
