@@ -13,22 +13,24 @@ $(document).ready(function() {
     console.log(multThree)
     var multFive = (countTo % 5);
 
+    var displayNumbers = [countTo];
+    for (var index = 1; index < countTo; index += 1) {
+      alert(index);
+    }
+
     if (isNaN(countTo)) {
       alert("Please enter a number!");
     } else if (countTo < 1) {
       alert("Sorry, I can not divide by 0");
-    } else if (multThree === 0 && multFive === 0) {
+    } else if (multThree[index] === 0 && multFive[index] === 0) {
       alert("Ping-Pong!");
-    } else if (multThree === 0) {
+    } else if (multThree[index] === 0) {
       alert("Ping");
-    } else if (multFive === 0) {
+    } else if (multFive[index] === 0) {
       alert("Pong!");
+    } else {
+      alert(index);
     }
-
-
-    // if ((countTo % 3) === 0) {
-    //   // alert(multThree);
-    // }
 
 
   })
