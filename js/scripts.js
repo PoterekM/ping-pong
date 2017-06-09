@@ -4,11 +4,8 @@
 var pingPong = function(userInput) {
   if (isNaN(userInput) === true) {
     alert("Please enter a numeric value.");
-  }
+  } // Not sure why NaN parameter only seems to only work here
 
-
-
-  // var userArray = [];
   for (var index = 1; index <= userInput; index ++) {
     var multThree = ((index) % 3);
     var multFive = ((index) % 5);
@@ -16,25 +13,12 @@ var pingPong = function(userInput) {
       $("ul").append("<li>" + "Ping-Pong!" + "</li>");
     } else if (multFive === 0) {
       $("ul").append("<li>" + "Pong!" + "</li>");
-    }
-
-
-    else {
+    } else if (multThree === 0) {
+      $("ul").append("<li>" + "Ping" + "</li>");
+    } else {
         $("ul").append("<li>" + index + "</li>");
-      }
-
+    }
   }
-
-
-
-
-
-
-
-
-
-
-
 };
 
 
@@ -47,39 +31,3 @@ $(document).ready(function() {
     $("#ul").text(result);
   });
 });
-
-
-
-
-//     var countTo = parseInt($("input#count-to").val());
-//     // console.log(countTo);
-//     for (var index = 1; index <= countTo; index += 1) {
-//       if (isNaN(userInput) === true) {
-//         alert("Please enter a number");
-//       }
-//       // countArray.push(index);
-//     }
-//     // console.log(countArray);
-//     // var multThree = (countTo % 3);
-//     // console.log(multThree);
-//     // var multFive = (countTo % 5);
-//     // console.log(multFive);
-//     //
-//     // var displayNumbers = [];
-//     // for (var index = 1; index <= countTo; index += 1) {
-//     //   if (isNaN(index)) {
-//     //     alert("Please enter a number!");
-//     //   } else if (index < 1) {
-//     //     alert("Sorry, I can not divide by 0");
-//     //   } else if (multThree[index] === 0 && multFive[index] === 0) {
-//     //     (displayNumbers.push("Ping-Pong!"));
-//     //   } else if (multFive === 0) {
-//     //     displayNumbers.push("Pong!");
-//     //   } else if (multThree === 0) {
-//     //     displayNumbers.push("Ping");
-//     //   } else {
-//     //     displayNumbers.push([index]);
-//     //   }
-//     // }
-//   }) // closing loop
-// });
