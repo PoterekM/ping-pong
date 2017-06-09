@@ -1,7 +1,6 @@
 // Business Logic
 
 
-
 // User Interface Logic
 
 $(document).ready(function() {
@@ -10,13 +9,22 @@ $(document).ready(function() {
 
     var countTo = parseInt($("input#count-to").val());
     console.log(countTo);
+    var multThree = (countTo % 3)
+    console.log(multThree)
 
     if (isNaN(countTo)) {
       alert("Please enter a number!");
     } else if (countTo < 1) {
       alert("Sorry, I can not divide by 0");
+    } else if (multThree === 0) {
+      alert("ping");
     }
 
-  })
 
+    // if ((countTo % 3) === 0) {
+    //   // alert(multThree);
+    // }
+
+
+  })
 })
