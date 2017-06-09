@@ -1,10 +1,9 @@
 // Business Logic
 
-
 var pingPong = function(userInput) {
   if (isNaN(userInput) === true || userInput < 1) {
     alert("Please enter a numeric value.");
-  } // Not sure why NaN parameter only seems to only work here
+  }
 
   for (var index = 1; index <= userInput; index ++) {
     var multThree = ((index) % 3);
@@ -20,7 +19,6 @@ var pingPong = function(userInput) {
     }
   }
 };
-
 
 // User Interface Logic
 $(document).ready(function() {
