@@ -2,7 +2,16 @@
 
 
 var pingPong = function(userInput) {
-  return false;
+  if (isNaN(userInput) === true) {
+    alert("Please enter a numeric value.");
+  }
+
+
+
+
+
+
+
 };
 
 
