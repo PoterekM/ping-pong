@@ -1,19 +1,26 @@
-# _{Application Name}_
+# _Ping-Pong_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Epicodus Intro to Programming: Arrays and Looping independent project, June 9, 2017_
 
 #### By _**Michelle Poterek**_
 
 ## Description
 
-<!-- _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_ -->
+_This project takes a user's input number and presents a range from 1 to the chosen number. The stipulations are that:_
+* Numbers divisible by 3 are replaced with "Ping!"
+* Numbers divisible by 5 are replaced with "Pong!"
+* Numbers divisible by both 3 and 5, or 15, are replaced with "Ping-Pong!"
+
+
 
 #### Behavior Driven Development
 ![Chart of Behaviors for program to run without bugs](img/behavior.png)
 
 ## Setup/Installation Requirements
 
+In order to clone this repository:
 
+* _open Terminal and type_
 * _$ git clone https://github.com/PoterekM/Epicodus-track.git_
 * _$ cd Epicodus-track_
 * _$ open index.html_
@@ -26,9 +33,6 @@
 * _format_ -->
 <!-- _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_ -->
 
-## Known Bugs
-
-<!-- _{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues thxat would impact use of your application.  Share any workarounds that are in place. }_ -->
 
 ## Support and contact details
 
@@ -36,7 +40,7 @@ _Please feel free to contact me directly via e-mail at poterekm@gmail.com if you
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This project utilizes jQuery (version 3.2.1) and Bootstrap for styling._
 
 ### License
 
