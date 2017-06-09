@@ -13,6 +13,8 @@ $(document).ready(function() {
 
     if (isNaN(countTo)) {
       alert("Please enter a number!");
+    } else if (countTo < 1) {
+      alert("Sorry, I can not divide by 0");
     }
 
   })
