@@ -1,0 +1,12 @@
+body {
+  background-color: teal;
+}
+
+.jumbotron {
+  background-color: grey;
+  color: salmon;
+}
+
+#result {
+  display: none;
+}
