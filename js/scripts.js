@@ -6,6 +6,12 @@ var pingPong = function(userInput) {
     alert("Please enter a numeric value.");
   }
 
+  var userArray = [];
+  for (var index = 1; index <= userInput; index ++) {
+    $("ul").append("<li>" + index + "</li>");
+  }
+
+
 
 
 
@@ -21,7 +27,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userInput = parseInt($("input#count-to").val());
     var result = pingPong(userInput);
-    $("#result").text(result);
+    $("#ul").text(result);
   });
 });
 
