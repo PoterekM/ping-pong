@@ -14,7 +14,12 @@ var pingPong = function(userInput) {
     var multFive = ((index) % 5);
     if (multFive === 0 && multThree === 0) {
       $("ul").append("<li>" + "Ping-Pong!" + "</li>");
-    } else {
+    } else if (multFive === 0) {
+      $("ul").append("<li>" + "Pong!" + "</li>");
+    }
+
+
+    else {
         $("ul").append("<li>" + index + "</li>");
       }
 
