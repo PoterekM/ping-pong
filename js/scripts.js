@@ -6,7 +6,11 @@ var pingPong = function(userInput) {
     alert("Please enter a numeric value.");
   }
 
-  var userArray = [];
+var multThree = (userInput % 3);
+var multFive = (userInput % 5);
+
+
+  // var userArray = [];
   for (var index = 1; index <= userInput; index ++) {
     $("ul").append("<li>" + index + "</li>");
   }
