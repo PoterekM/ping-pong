@@ -6,14 +6,22 @@ var pingPong = function(userInput) {
     alert("Please enter a numeric value.");
   }
 
-var multThree = (userInput % 3);
-var multFive = (userInput % 5);
 
 
   // var userArray = [];
   for (var index = 1; index <= userInput; index ++) {
-    $("ul").append("<li>" + index + "</li>");
+    var multThree = ((index) % 3);
+    var multFive = ((index) % 5);
+    if (multFive === 0 && multThree === 0) {
+      $("ul").append("<li>" + "Ping-Pong!" + "</li>");
+    } else {
+        $("ul").append("<li>" + index + "</li>");
+      }
+
   }
+
+
+
 
 
 
