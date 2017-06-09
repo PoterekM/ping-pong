@@ -26,6 +26,7 @@ var pingPong = function(userInput) {
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     event.preventDefault();
+    $("ul").empty(); // rough equivalent of remove
     var userInput = parseInt($("input#count-to").val());
     var result = pingPong(userInput);
     $("#ul").text(result);
