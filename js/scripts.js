@@ -17,10 +17,12 @@ $(document).ready(function() {
       alert("Please enter a number!");
     } else if (countTo < 1) {
       alert("Sorry, I can not divide by 0");
+    } else if (multThree === 0 && multFive === 0) {
+      alert("Ping-Pong!");
     } else if (multThree === 0) {
       alert("Ping");
     } else if (multFive === 0) {
-      alert("Pong!")
+      alert("Pong!");
     }
 
 
