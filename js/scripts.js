@@ -2,7 +2,7 @@
 
 
 var pingPong = function(userInput) {
-  if (isNaN(userInput) === true) {
+  if (isNaN(userInput) === true || userInput < 1) {
     alert("Please enter a numeric value.");
   } // Not sure why NaN parameter only seems to only work here
 
