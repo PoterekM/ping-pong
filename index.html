@@ -13,33 +13,48 @@
         <h1>Ping-Pong</h1>
       </div>
       <div>
-        <form id="form1">
-          <div class="form-group">
-            <label for="count-to">Count to:</label>
-            <input id="count-to" class="form-control" type="text">
+        <div class="well" id="form-well">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- empty -->
+            </div>
+            <div class="col-md-6">
+              <form id="form1">
+                <div class="form-group">
+                  <label for="count-to">Count to:</label>
+                  <input id="count-to" class="form-control" type="text">
+                </div>
+                <button type="submit" class="btn">Let's Play!</button>
+              </form>
+            </div>
+            <div class="col-md-3">
+              <!-- empty -->
+            </div>
           </div>
-          <button type="submit" class="btn">Let's Play!</button>
-        </form>
+        </div>
       </div>
 
-      <div class="well">
+      <div class="well" id="body-well">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <h1>Rules:</h1>
             <ul>
               <li>Only positive numeric values are recognized</li>
               <li>Numbers divisible by 3 are replaced with "Ping!"</li>
               <li>Numbers divisible by 5 are replaced with "Pong!"</li>
               <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
-            </ul>
+            </ol>
+          </div>
+          <div class="col-md-5 image-well">
+            <!-- <div class="image-well"> -->
+              <img src="img/ping-image.webp" alt="">
+            <!-- </div> -->
           </div>
           <div class="col-md-3">
-          </div>
-          <div class="col-md-6">
             <div class="display-list" id="result">
-                <p>Your Pong-Result is:</p>
-                <ul id="display-ul">
-                </ul>
+              <p>Your Pong-Result is:</p>
+              <ul id="display-ul">
+              </ul>
             </div>
           </div>
         </div>

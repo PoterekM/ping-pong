@@ -24,6 +24,7 @@ $(document).ready(function() {
   $("#form1").submit(function(event) {
     event.preventDefault();
     $("#result").show();
+    $(".image-well").show();
     $("#display-ul").empty(); // rough equivalent of remove
     var userInput = parseInt($("input#count-to").val());
     var result = pingPong(userInput);

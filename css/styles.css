@@ -16,4 +16,18 @@ body {
   color: teal;
   font-weight: bold;
   /*text-align: center;*/
+  text-align: left;
+}
+
+.image-well {
+  display: none;
+}
+
+#body-well {
+  padding: 15px;
+  margin-left: 15px;
+}
+
+#form-well {
+  background-color: teal;
 }
