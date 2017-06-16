@@ -25,8 +25,8 @@ function pingpong(userInput) {
     //   // $("#display-ul").append("<li>" + index + "</li>");
     // }
     console.log(displayArray);
+  }
   return displayArray;
-}
 
 
   var finalArray = function(displayArray) {
