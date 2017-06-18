@@ -1,9 +1,9 @@
 // Business Logic
 
 function pingpong(userInput) {
-  // if (isNaN(userInput) === true || userInput < 1) {
-  //   alert("Please enter a numeric value.");
-  // }
+  if (isNaN(userInput) === true || userInput < 1) {
+    alert("Please enter a numeric value.");
+  }
   var displayArray= [];
   for (var index = 1; index <= userInput; index ++) {
     if ((index % 15) === 0) {
