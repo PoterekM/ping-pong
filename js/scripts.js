@@ -25,11 +25,13 @@ function pingpong(userInput) {
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     event.preventDefault();
+    var userInput = parseInt($("input#count-to").val());
+    var displayArray = pingpong(userInput);
     $("#result").show();
     $(".image-well").show();
     $("#display-ul").empty(); // rough equivalent of remove
-    var userInput = parseInt($("input#count-to").val());
-    var displayArray = pingpong(userInput);
     $("#display-ul").append(displayArray);
+    displayArray.forEach(function(displayArray) {
+    $("#display-ul").append("<li>" + (displayArray) + "</li>")
   });
 });
