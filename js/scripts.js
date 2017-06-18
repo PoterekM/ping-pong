@@ -15,8 +15,8 @@ function pingpong(userInput) {
     } else {
         displayArray.push(index);
     }
-    return displayArray;
   }
+  return displayArray;
 };
 
 
@@ -30,8 +30,9 @@ $(document).ready(function() {
     $("#result").show();
     $(".image-well").show();
     $("#display-ul").empty(); // rough equivalent of remove
-    $("#display-ul").append(displayArray);
+    // $("#display-ul").append(displayArray);
     displayArray.forEach(function(displayArray) {
-    $("#display-ul").append("<li>" + (displayArray) + "</li>")
+    $("#display-ul").append("<li>" + displayArray + "</li>")
+    });
   });
 });
