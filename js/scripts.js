@@ -7,20 +7,14 @@ function pingpong(_userInput) {
   var displayArray= [];
   for (var index = 1; index <= userInput; index ++) {
     if ((index % 15) === 0) {
-      return "Ping-Pong!";
-
-      // $("#display-ul").append("<li>" + "Ping-Pong!" + "</li>");
+      displayArray.push("Ping-Pong!");
     } else if (index / 5 === 0) {
-      return "pong!";
-      // $("#display-ul").append("<li>" + "Pong!" + "</li>");
+      displayArray.push("pong!");
     } else if ((index / 3)  === 0) {
-      return "ping";
-      // $("#display-ul").append("<li>" + "Ping" + "</li>");
+      displayArray.push("ping");
+    } else {
+        displayArray.push(index);
     }
-    // else {
-    //   displayArray.push(index);
-    //   // $("#display-ul").append("<li>" + index + "</li>");
-    // }
     return displayArray;
   }
 };
