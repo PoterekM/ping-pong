@@ -6,10 +6,7 @@ function pingpong(_userInput) {
   // }
   var displayArray= [];
   for (var index = 1; index <= userInput; index ++) {
-    // var multThree = ((index) % 3);
-    // var multFive = ((index) % 5);
-    if (index / 5 === 0 && index / 3) === 0) {
-
+    if ((index % 15) === 0) {
       return "Ping-Pong!";
 
       // $("#display-ul").append("<li>" + "Ping-Pong!" + "</li>");
