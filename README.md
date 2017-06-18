@@ -13,7 +13,7 @@ _This project takes a user's input number and presents a range from 1 to the cho
 
 
 ### Behavior Driven Development: _Making life less buggy one line at a time_
-_ Below is the Behavior Driven Development (BDD) created to write and test the Ping-Pong application. It starts out with a process that is fundamental to the program running appropriately and increases in complexity as the list goes on. This BDD tells the programmer:_
+_Below is the Behavior Driven Development (BDD) created to write and test the Ping-Pong application. It starts out with a process that is fundamental to the program running appropriately and increases in complexity as the list goes on. This BDD tells the programmer:_
 
 * _Where to start in the process_
 * _What to test and what not to test_
