@@ -1,6 +1,6 @@
 // Business Logic
 
-function pingpong(_userInput) {
+function pingpong(userInput) {
   // if (isNaN(userInput) === true || userInput < 1) {
   //   alert("Please enter a numeric value.");
   // }
@@ -19,6 +19,8 @@ function pingpong(_userInput) {
   }
 };
 
+
+
 // User Interface Logic
 $(document).ready(function() {
   $("#form1").submit(function(event) {
@@ -27,7 +29,7 @@ $(document).ready(function() {
     $(".image-well").show();
     $("#display-ul").empty(); // rough equivalent of remove
     var userInput = parseInt($("input#count-to").val());
-    var result = pingPong(userInput);
+    var displayArray = pingpong(userInput);
     $("#display-ul").append(displayArray);
   });
 });
